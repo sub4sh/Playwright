@@ -6,7 +6,7 @@ test('pop after any tab open', async ({ page }) => {
   // Click the correct button and wait for popup
   const [popup] = await Promise.all([
     page.waitForEvent('popup'),
-    page.locator('#tabButton').click()   // correct locator
+    page.locator('#tabButton').click()
   ]);
 
   // Verify content inside the new tab
