@@ -6,4 +6,5 @@ test ('get through api',async({ request})=>{
     const data= await response.json();
     console.log("user data:",data);
     expect(data.id).toBe(1);
+
 })
